@@ -13,10 +13,11 @@ using namespace std;
 
 //Set location of prime output file
 //string primeFile = "C:\\Temp\\primeOutputBin.bin";
+//string primeFile = "C:\\Daten\\primeOutputBin.bin";
 string primeFile = "primeOutputBin.bin";
 
-//Set max value for n
-uint64_t nMax = (uint64_t)400000;  //5e10 works 
+//Set max value for prime search
+uint64_t primeMax = (uint64_t)400000;  //5e10 works 
 
 //sieveOfEratosthenesFile adapted from https://www.geeksforgeeks.org/sieve-of-eratosthenes/
 void sieveOfEratosthenesFile(uint64_t n)
@@ -119,13 +120,13 @@ int main(void)
 {
     vector<uint64_t> outN;
 
-    cout << "Input max n:";
+    cout << "Input top bound for prime search (e.g. 400000):";
 
-    cin >> nMax;
+    cin >> primeMax;
 
     cout << "Starting Prime generation:\n";
 
-    sieveOfEratosthenesFile(nMax);
+    sieveOfEratosthenesFile(primeMax);
 
     sumModCheckFile(outN);
 
