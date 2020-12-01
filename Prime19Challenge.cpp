@@ -18,6 +18,7 @@ string primeFile = "primeOutputBin.bin";
 //Set max value for n
 uint64_t nMax = (uint64_t)400000;  //5e10 works 
 
+//sieveOfEratosthenesFile adapted from https://www.geeksforgeeks.org/sieve-of-eratosthenes/
 void sieveOfEratosthenesFile(uint64_t n)
 {
     // Create a boolean array "prime[0..n]" and initialize all entries as true. 
