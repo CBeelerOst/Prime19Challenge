@@ -1,5 +1,7 @@
 // Prime19Challenge.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// MPMP19: THE 19 CHALLENGE Solution
+// by Christoph Beeler
+// Switzerland
 
 #include <iostream>
 #include <vector>
@@ -12,9 +14,9 @@ using namespace std;
 #include <mpir.h>
 
 //Set location of prime output file
+string primeFile = "primeOutputBin.bin";
 //string primeFile = "C:\\Temp\\primeOutputBin.bin";
 //string primeFile = "C:\\Daten\\primeOutputBin.bin";
-string primeFile = "primeOutputBin.bin";
 
 //Set max value for prime search
 uint64_t primeMax = (uint64_t)400000;  //5e10 works 
